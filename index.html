@@ -4,6 +4,8 @@
 		<meta charset="utf8">
 		<title>OpenMusic</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="libs/prism/prism.css">
+		<script src="libs/prism/prism.js"></script>
 	</head>
 	<body>
 		<main>
@@ -21,7 +23,11 @@
 
 			<article id="codesample">
 				<h3>How it looks like</h3>
-				TODO: Prismisify this
+				<pre><code class="language-javascript">var Oscillator = require('openmusic-oscillator');
+var ac = new AudioContext();
+var osc = Oscillator(ac);
+osc.connect(ac.destination);
+osc.start();</code></pre>
 			</article>
 			
 			<article id="getcode">
