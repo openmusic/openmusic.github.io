@@ -22,12 +22,16 @@
 			</article>
 
 			<article id="codesample">
-				<h3>How it looks like</h3>
+				<h3>A Simple Example</h3>
 				<pre><code class="language-javascript">var Oscillator = require('openmusic-oscillator');
 var ac = new AudioContext();
 var osc = Oscillator(ac);
 osc.connect(ac.destination);
 osc.start();</code></pre>
+			</article>
+			<article id="longexample">
+				<h3>A More Complicated Example: Let's Create An Instrument!</h3>
+
 			</article>
 			
 			<article id="getcode">
@@ -35,6 +39,40 @@ osc.start();</code></pre>
 				<ul>
 					<li>Download individual modules from <a href="https://github.com/openmusic">GitHub</a>.</li>
 					<li>Or do <a href="https://www.npmjs.org/search?q=openmusic">a search</a> for <tt>openmusic-</tt> prefixed modules in npmjs.org.</li>
+				</ul>
+			</article>
+			<article id="working-with-openmusic-repos">
+				<h3>Understanding the Modules</h3>
+				<p>Inside the OpenMusic organization, you will find a lot of modules that can help you get started quickly.</p>
+				<p>Some modules function like plug-and-play building blocks, whereas others function like templates that you can use to write your own building blocks.</p>
+				<p>You will notice that many building blocks (example: drum-machine) will have a corresponding ui component. You can choose to write your own UI, or to use the one we've provided.</p>
+				<h4>Plug-and-Play</h4>
+				<ul>
+					<li>array-to-audiobuffer</li>
+					<li>clipper</li>
+					<li>dcbias</li>
+					<li>drum-machine</li>
+					<li>drum-machine-ui</li>
+					<li>frequencygraph</li>
+					<li>keyboard</li>
+					<li>oscillator</li>
+					<li>oscilloscope</li>
+					<li>sample-player</li>
+					<li>slider</li>
+					<li>theremin</li>
+					<li>theremin-ui</li>
+					<li>tracker-player</li>
+					<li>transport</li>
+					<li>xy-controller</li>
+				</ul>
+				<h4>Templates</h4>
+				<ul>
+					<li>audio-node-template</li>
+					<li>web-component-template</li>
+				</ul>
+				<h4>Build Utilities</h4>
+				<ul>
+					<li>demo-gulp-tasks</li>
 				</ul>
 			</article>
 
