@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf8">
 		<title>OpenMusic</title>
@@ -8,11 +8,11 @@
 		<script src="libs/prism/prism.js"></script>
 	</head>
 	<body>
-		<main>
+		<main role="main">
 			<h1>OpenMusic</h1>
 			<h2>Modules and components for Web Audio</h2>
 
-			<article id="principles">
+			<article role="article" id="principles">
 				<h3>Principles</h3>
 				<ul>
 					<li>OpenMusic custom audio nodes behave like standard <tt>AudioNode</tt>s</li>
@@ -21,7 +21,7 @@
 				</ul>
 			</article>
 
-			<article id="codesample">
+			<article role="article" id="codesample">
 				<h3>A Simple Example</h3>
 				<pre><code class="language-javascript">var Oscillator = require('openmusic-oscillator');
 var ac = new AudioContext();
@@ -29,19 +29,19 @@ var osc = Oscillator(ac);
 osc.connect(ac.destination);
 osc.start();</code></pre>
 			</article>
-			<article id="longexample">
+			<article role="article" id="longexample">
 				<h3>A More Complicated Example: Let's Create An Instrument!</h3>
 				
 			</article>
 			
-			<article id="getcode">
+			<article role="article" id="getcode">
 				<h3>Get the code</h3>
 				<ul>
 					<li>Download individual modules from <a href="https://github.com/openmusic">GitHub</a>.</li>
 					<li>Or do <a href="https://www.npmjs.org/search?q=openmusic">a search</a> for <tt>openmusic-</tt> prefixed modules in npmjs.org.</li>
 				</ul>
 			</article>
-			<article id="working-with-openmusic-repos">
+			<article role="article" id="working-with-openmusic-repos">
 				<h3>Understanding the Modules</h3>
 				<p>Inside the OpenMusic organization, you will find a lot of modules that can help you get started quickly.</p>
 
